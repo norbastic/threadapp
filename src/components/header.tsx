@@ -1,11 +1,9 @@
-import { auth } from '@/auth';
 import HeaderContent from './header-content';
 
-export default async function Header() {
-    const session = await auth();
+export default function Header() {
 
     return (
-        <HeaderContent session={session} />
+        <HeaderContent />
     )
 
 }
